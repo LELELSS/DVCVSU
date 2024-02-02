@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOMEPAGE</title>
+	<link rel="icon" href="image/logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style >
+
+	@media only screen and (max-width:800px) {
+		/* For tablets: */
+		.main {
+		width: 80%;
+		padding: 0;
+	}
+	.right {
+    width: 100%;
+	}
+	}
+	@media only screen and (max-width:500px) {
+		/* For mobile phones: */
+		.menu, .main, .right {
+		width: 100%;
+	}
+	}	
+		html,
+		body {
+			margin:0;
+			padding:1;
+			margin-top:0;
+			background-color: #ffb703;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+			background-image: url('image/home.png');
+			scroll-behavior: smooth;
+		}
+		#whole {
+			margin:0 auto;
+			width:100%;
+		
+		}	
+		
+		#center {
+			background-image: url('image/v.png');
+			background-size: 100% 100%;
+			float:left;
+			width:98%;
+			padding: 1%;
+			height:600px;
+			margin-top: 280px;
+			
+		
+		}
+		
+		#center01 {
+			background-image: url('image/bg.png');
+			background-size: 100% 100%;
+			float:left;
+			width:98%;
+			padding: 1%;
+			height:600px;
+			margin-top: px;
+			
+		
+		}
+
+		.navbar {
+			background-color: #333;
+			position:fixed;
+			width: 100%;
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			text-align: center;
+			
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: right;
+			margin-right: 10px;
+			
+		}
+
+		.dropdown .dropbtn {
+			font-size: 25px;  
+			border: none;
+			outline: none;
+			color: white;
+			background-color: inherit;
+			font-family: inherit;
+			margin-left: 15px;
+			margin-top: 10px;
+			text-align: center;
+		}
+
+		.navbar a:hover, .dropdown:hover .dropbtn {
+			background-color: black;
+		}
+
+		.dropdown-content {
+			right: 4px;
+			left: auto;
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		
+
+		#p01 {
+			
+			color: white;
+			font-size: 25px;
+			margin-left: 20px;
+			margin-top: 15px;
+			text-decoration: none;
+		}
+
+		#p1 {
+			float:right;
+			color: white;
+			font-size: 1.3vw;
+			margin-left: 20px;
+			text-decoration: none;
+		}
+			
+		.img {
+			height: 80%;
+			width: 48px;
+			margin-left:30px;
+			margin-top: 5px;
+		}
+		
+		.imgg {
+			height: 30%;
+			width: 48px;
+			margin-left:10px;
+			margin-top: 5px;
+		}
+		
+		#VM {
+			height: 50%;
+			width: 55%;
+			margin-left:550px;
+			margin-top: 60px;
+		}
+		
+		#a1 {
+			
+		}
+		
+		#values {
+			margin-top: 0px;
+			margin-left: 30px;
+			float: left;
+			font-family: Fantasy;
+			font-weight: normal;
+			font-size: 50px;
+			text-align: center;
+		}
+		
+		#cvsu {
+			margin-top: 50px;
+			height: 570px;
+			width: 100%;
+		}
+		
+		#p2{
+			margin-top:180px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 4vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 5px 5px 10px black;
+		}
+		
+		#p02{
+			margin-top:0	px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 5px 5px 10px black;
+		}
+		
+		#p09{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 5px 5px 10px black;
+		}
+		
+		#p03{
+			margin-top:0px;
+			margin-bottom:-5px;
+			margin-left:0px;
+			text-align: center;
+			color: #D2691E;
+			font-size: 2.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 5px 5px 10px black;
+		}
+
+		#p04{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			color: #ffffff;
+			font-size: 1.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 5px 5px 10px black;
+		}
+		
+		#p05{
+			margin-top:0px;
+			margin-bottom:-5px;
+			margin-left:0px;
+			float: left;
+			text-align: justify;	
+			color: #D2691E;
+			font-size: 2.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 5px 5px 10px black;
+		}
+		
+		#p06{
+			margin-top:20px;
+			margin-left:0px;
+			float: left;
+			text-align: justify;
+			color: #ffffff;
+			font-size: 1.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 5px 5px 10px black;
+		}
+		
+		#p07{
+			margin-top:0px;
+			margin-bottom:-5px;
+			margin-left:0px;
+			float: right;
+			text-align: justify;	
+			color: #D2691E;
+			font-size: 2.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 5px 5px 10px black;
+		}
+		
+		#p08{
+			margin-top:20px;
+			margin-left:0px;
+			float: right;
+			text-align: justify;
+			color: #ffffff;
+			font-size: 1.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 5px 5px 10px black;
+		}
+		#p3{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			text-indent: 50px;
+			font-size: 1.3vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px black;
+		}
+		
+		#p4{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 1.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 3px 3px 10px #FDBD01;
+		}
+		
+		#p5{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			text-indent: 50px;
+			font-size: 1.7vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px #FFFFFF;
+		}
+		
+		#p6{
+
+			text-align: left;
+			font-size: 1.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px black;
+		}
+		
+		#p7{
+			text-align: left;
+			font-size: 1.5vw;
+			top: 50%;
+			width: 100%;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			
+		}
+		
+		#center1 {
+			background-color: white;
+			float:left;
+			width:98%;
+			padding: 1%;
+			height:600px;
+			margin-top: 50px;
+		}
+		
+		#center2 {
+			background-image: url('image/footer.png');
+			float:left;
+			width:98%;
+			padding: 1%;
+			height: 150px;
+			margin-top: 50px;
+		}
+			
+		#VM {
+			height: 100%;
+			width: 100%;
+			margin-top: 0px;
+			margin-left: 0px;
+		}
+		
+		#VM1 {
+			height: 100%;
+			width: 100%;
+			margin-top: 0px;
+			margin-left: 0px;
+		}
+		
+		.square {
+			height: 50px;
+			width: 50px;
+			background-color: #555;
+			border-radius: 5px;
+		}
+		#mission {
+			height: 50%;
+			width: 50%;
+			margin-top: -500px;
+			margin-left: 0px;
+		}
+		
+		.container {
+			position: relative;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			}
+			
+		.top-left {
+			position: absolute;
+			width: 60%;
+			top: 137%;
+			}
+		.top-right {
+			position: absolute;
+			top: 137%;
+			width: 51%;
+			}
+		.bottom-left {
+			position: absolute;
+			top: 181%;
+			width: 72%;
+			}
+		
+		footer {
+			text-align: center;
+			padding: 3px;
+			
+			color: white;
+			}
+		.left {
+			position: absolute;
+			top: 50%;
+			width: 50%;
+			
+			}
+		.left1 {
+			position: absolute;
+			left: 140px;
+			bottom: -30px;
+			
+			}
+			
+		.left2 {
+			position: absolute;
+			left: 780px;
+			bottom: 45px;
+			}
+		.left3 {
+			position: absolute;
+			left: 680px;
+			bottom: 8px;
+			}
+		.left4 {
+			position: absolute;
+			left: 680px;
+			bottom: -35px;
+			}
+		.left5 {
+			position: absolute;
+			left: 680px;
+			bottom: -80px;
+			}
+		#logo1 {
+			float:right;
+			margin-bottom: 5px;
+			height: 10%;
+			width: 10%;
+		}
+		#email {
+			margin-top: 10px;
+			height: 5%;
+			width: 5%;
+		}
+		#contact {
+			margin-top: 10px;
+			height: 5%;
+			width: 5%;
+		}
+		#fb {
+			margin-top: 10px;
+			height: 5%;
+			width: 5%;
+		}
+			
+		.footer{
+	
+			padding:30px 0px;
+			font-family: 'Play', sans-serif;
+			text-align:center;
+			opacity: 1; // Leave this as 1
+			background-color: rgba(0,0,0,0.6);
+		}
+
+		.footer .row{
+			width:100%;
+			margin:1% 0%;
+			padding:0.6% 0%;
+			margin-left: 0px;
+			font-size:0.8em;
+			text-align:center;
+			}
+			
+			.row1{
+			width:100%;
+			margin:1% 0%;
+			padding:0.6% 0%;
+		
+			font-size:0.8em;
+			text-align: center;
+			}
+
+		.footer .row a{
+			text-decoration:none;
+			color:black;
+			transition:0.5s;
+		}
+
+		.footer .row a:hover{
+			color:#fff;
+			}
+
+		.footer .row ul{
+			width:100%;
+		}
+
+		.footer .row ul li{
+			display:inline-block;
+			margin:0px 30px;
+		}
+
+		.footer .row a i{
+		font-size:2em;
+		margin:0% 1%;
+		}
+
+		@media (max-width:720px){
+			.footer{
+				text-align:left;
+				padding:5%;
+			}
+			.footer .row ul li{
+				display:block;
+				margin:0px 0px;
+				text-align:left;
+			}
+			.footer .row a i{
+				margin:0% 3%;
+			}
+		}
+		
+		input[type=text], select {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+}
+
+input[type=submit] {
+  width: 75%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-left: 98px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=submit]:hover {
+  background-color: #45a04;
+}
+
+.dib {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+		
+</style>
+</head>
+		<body>
+		<header>
+			<div class="navbar">
+				<a href="Seal.html" ><img class="imgg" src="image/logo.png" alt="logo"></a>
+				<a href="Index.html" id="p01">CAVITE STATE UNIVERSITY - BACOOR CAMPUS</a>
+				<div class="dropdown">
+					<button  class="dropbtn">☰
+					<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					<a href="About.html">ABOUT</a>
+					<a href="Gallery.html">GALLERY</a>
+					<a href="Seal.html">SEAL</a>
+					</div>
+				</div> 
+			</div>
+		</header>
+		</br>
+		</br>
+		<p id="p2" style="font-color: white;"><span style='color: #1E90FF'>TRUTH</span> | <span style='color: #FF7900'>EXCELLENCE</span> | <span style='color: #4CC417'>SERVICE</span></p>
+		<section>
+			<div id="whole">
+				<div id="center">
+					<p id="p03" style="font-color: white;">Quality Policy</p>
+					<p id="p04" style="font-color: white;">We Commit to the highest standards of education, value our stakeholders, Strive for continual improvement of our products and services, and Uphold the University’s tenets of Truth, Excellence, and Service to produce globally competitive and morally upright individuals.</p>
+					<div style="float:left; width:400px	">
+					<p id="p05" style="font-color: white;">CvSU Mission</p>
+					<p id="p06" style="font-color: white;">Cavite State University shall provide excellent, equitable and relevant educational opportunities in the arts, sciences and technology through quality instruction and responsive research and development activities. It shall produce professional, skilled and morally upright individuals for global competitiveness.</p>
+					</div>
+					<div style="float:right; width:400px">
+					<p id="p07" style="font-color: white;">CvSU Vision</p>
+					<p id="p08" style="font-color: white;">The premier university in historic Cavite globally recognized for excellence in character development, academics, research, innovation and sustainable community engagement.	</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<footer id="center01">
+			
+  <form action="/action_page.php" style="float:left;">
+	<p id="p02">Get In Touch:<p>
+    <label for="lname"><span style="color:#000000; font-size: 18px">Name</span></label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Full Name..." style="margin-left: 30px;">
+	</br>
+     <label for="lname"><span style="color:#000000; font-size: 18px">Email</span></label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Email Address..." style="margin-left: 30px;">
+	</br>
+	 <label for="lname"><span style="color:#000000; font-size: 18px">Message</span></label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Message..." style="margin-left: 10px;">
+    
+  
+    <input type="submit" value="Submit">
+  </form>
+
+			<div class="footer">
+			<div class="row">
+			<p id="p09">Follow us for more:<p>
+			<a href="https://www.youtube.com/@cavitestateuniversitymainc7893"><img class="img" src="image/yt.png" alt="mail" id="email"></i></a>
+			<a href="https://cvsu.edu.ph"><img class="img" src="image/web.png" alt="contact" id="contact"></i></a>
+			<a href="https://www.facebook.com/CvSU.B.Admission"><img class="img" src="image/fb.png" alt="face" id="fb"></i></a>
+		</div>
+		</br>
+		</br>
+
+			<div class="row1">
+				CVSU Copyright © 2023 - All rights reserved || Designed By: Virtudez Groups 
+			</div>
+			</div>
+		</footer>
+
+			</body>
+</html>

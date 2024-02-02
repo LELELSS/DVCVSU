@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABOUT CvSU</title>
+	<link rel="icon" href="image/logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style >
+
+	@media only screen and (max-width:800px) {
+		/* For tablets: */
+		.main {
+		width: 80%;
+		padding: 0;
+	}
+	.right {
+    width: 100%;
+	}
+	}
+	@media only screen and (max-width:500px) {
+		/* For mobile phones: */
+		.menu, .main, .right {
+		width: 100%;
+	}
+	} 
+		html,
+		body {
+			margin:0;
+			padding:1;
+			margin-top:0;
+			background-color: #ffb703;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+			background-image: url('image/bg.png');
+			scroll-behavior: smooth;
+
+		}
+		#whole {
+			margin:0 auto;
+			width:100%;
+		
+		}	
+		
+		#center {
+			background-color: white;
+			margin-left: 50px;
+			float:left;
+			width:100%;
+			padding: 1%;
+			height:600px;
+			margin-top: 50px;
+			
+		
+		}
+		
+		#left {
+			float:left;
+			width:22%;
+			padding: 1%;
+			height:1650px;
+			background-color:#ffffff;
+			margin-top: 50px;
+			margin-right: -20px;
+			margin-left: 50px;
+			border-radius: 25px;
+		}
+		
+		#left1 {
+			float:left;
+			width:22%;
+			padding: 1%;
+			height:330px;
+			background-color:#ffffff;
+			margin-top: 50px;
+			margin-right: -20px;
+			margin-left: 15px;
+			border-radius: 25px;
+		}
+		
+		#right {
+			float:left;
+			width:37.5%;
+			padding: 1%;
+			height:1650px;
+			background-color:#ffffff;
+			margin-top: 50px;
+			margin-right: 10px;
+			margin-left: 50px;
+			border-radius: 25px;
+		}
+
+		.navbar {
+			background-color: #333;
+			position:fixed;
+			width: 100%;
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			text-align: center;
+			
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: right;
+			margin-right: 10px;
+			
+		}
+
+		.dropdown .dropbtn {
+			font-size: 25px;  
+			border: none;
+			outline: none;
+			color: white;
+			background-color: inherit;
+			font-family: inherit;
+			margin-left: 15px;
+			margin-top: 10px;
+			text-align: left;
+		}
+
+		.navbar a:hover, .dropdown:hover .dropbtn {
+			background-color: black;
+		}
+
+		.dropdown-content {
+			right: 4px;
+			left: auto;
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		
+
+		#p01 {
+			
+			color: white;
+			font-size: 25px;
+			margin-left: 20px;
+			margin-top: 15px;
+			text-decoration: none;
+		}
+
+		#p1 {
+			float:right;
+			color: white;
+			font-size: 1.5vw;
+			margin-left: 20px;
+			text-decoration: none;
+		}
+			
+		.img {
+			height: 80%;
+			width: 48px;
+			margin-left:30px;
+			margin-top: 5px;
+		}
+		
+		.imgg {
+			height: 30%;
+			width: 48px;
+			margin-left:10px;
+			margin-top: 5px;
+		}
+		
+		#VM {
+			height: 50%;
+			width: 55%;
+			margin-left:550px;
+			margin-top: 60px;
+		}
+		
+		#a1 {
+			margin-left: 400px;
+		}
+		
+		#values {
+			margin-top: 0px;
+			margin-left: 30px;
+			float: left;
+			font-family: Fantasy;
+			font-weight: normal;
+			font-size: 50px;
+			text-align: center;
+		}
+		
+		#cvsu {
+			margin-top: 50px;
+			height: 570px;
+			width: 100%;
+		}
+		
+		#p2{
+			margin-top:100px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 40px;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		
+		#p3{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 1.3vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px black;
+		}
+		
+		#p4{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 1.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 3px 3px 10px #FDBD01;
+		}
+		
+		#p5{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 1.55vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px #FFFFFF;
+		}
+		
+		#p6{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 1.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px black;
+		}
+		
+		#p7{
+			margin-top:0px;
+			margin-left:px;
+			text-align: center;
+			font-size: 1.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			
+		}
+		
+		#p8{
+			margin-top:0px;
+			margin-left:10px;
+			margin-right:20px;
+			text-align: justify;
+			text-indent: 30px;
+			font-size: 1.2vw;
+			font-family: 'Arial', sans-serif; 
+			font-weight: normal;
+			text-shadow: 1px 1px 5px white;
+
+		
+	
+		}
+		
+		#p9 {
+			margin-top:0px;
+			margin-left: 0px;
+			text-align: right;
+			font-size: 2.3vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		
+		#p09 {
+			margin-top:0px;
+			margin-left: 0px;
+			text-align: center;
+			font-size: 40px;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		
+		#p009{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 5px 5px 10px black;
+		}
+		
+		#p10{
+			margin-top:-5px;
+			margin-left:150px;
+			margin-right:20px;
+			text-align: right;
+			font-size: 1.6vw;
+			font-family: 'Arial', sans-serif; 
+			font-weight: normal;
+			text-shadow: 1px 1px 5px white;
+		}
+		
+		#p11 {
+			margin-top:px;
+			margin-left:0px;
+			text-align: left;
+			font-size: 20px;
+			font-family: sans-serif; 
+			text-shadow: 1px 1px 5px white;
+		}
+		
+		#p12 {
+			margin-top:-20px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		
+		#p13 {
+			margin-top:70px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		#p14 {
+			margin-top:80px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		#p15 {
+			margin-top:80px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		#p16 {
+			margin-top: 75px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		#p17 {
+			margin-top:80px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		#p18 {
+			margin-top:75px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		#p19 {
+			margin-top:80px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		#p20 {
+			margin-top:75px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		#p21 {
+			margin-top:80px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		#p22 {
+			margin-top:75px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		#p23 {
+			margin-top:75px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		#p24 {
+			margin-top:75px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		
+		#center1 {
+			background-image: url('image/pr1.png');
+			background-size: 50% 100%;
+			background-repeat: no-repeat;
+			background-color: white;
+			float:left;
+			width:100%;
+			padding: 0%;
+			height:300px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		
+		#center2 {
+			width:100%;
+			height:100px;
+			margin-top: 50px;
+			margin-bottom: 700px;
+		}
+		
+		#center3 {
+			
+			float:left;
+			width:100%;
+			padding: 0%;
+			height:00px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+			
+		#VM {
+			height: 100%;
+			width: 100%;
+			margin-top: 0px;
+			margin-left: 0px;
+		}
+		
+		#VM1 {
+			height: 100%;
+			width: 100%;
+			margin-top: 0px;
+			margin-left: 0px;
+		}
+		
+		.square {
+			height: 50px;
+			width: 50px;
+			background-color: #555;
+			border-radius: 5px;
+		}
+		#mission {
+			height: 50%;
+			width: 50%;
+			margin-top: -500px;
+			margin-left: 0px;
+		}
+		
+		.container {
+			position: relative;
+			text-align: center;
+			}
+			
+		.top-left {
+			position: absolute;
+			top: 850px;
+			left: 90px;
+			}
+		.top-right {
+			position: absolute;
+			top: 865px;
+			right: 90px;
+			}
+		.bottom-left {
+			position: absolute;
+			top: 1130px;
+			left: 155px;
+			}
+		
+		footer {
+			text-align: center;
+			padding: 3px;
+			color: white;
+			}
+		.left {
+			position: absolute;
+			left: 15px;
+			bottom: -30px;
+			
+			}
+		.left1 {
+			position: absolute;
+			left: 140px;
+			bottom: -30px;
+			
+			}
+			
+		.left2 {
+			position: absolute;
+			left: 780px;
+			bottom: 45px;
+			}
+		.lef
+			left: 680px;
+			bottom: 8px;
+			}
+		.left4 {
+			
+			left: 680px;
+			bottom: -35px;
+			}
+		.left5 {
+			position: absolute;
+			left: 680px;
+			bottom: -80px;
+			}
+		#logo1 {
+			margin-bottom: 5px;
+			height: 100px;
+			width: 100px;
+		}
+		#email {
+			margin-top: 10px;
+			height: 50px;
+			width: 50px;
+		}
+		#contact {
+			margin-top: 10px;
+			height: 50px;
+			width: 50px;
+		}
+		#fb {
+			margin-top: 10px;
+			height: 50px;
+			width: 50px;
+		}
+		
+		#bc {
+			height: 10%;
+			width: 20%;
+			margin-left:10px;
+			margin-right:10px;
+			border-radius: 50%;
+			float: left;
+		}
+		
+		#acs {
+			margin-top: 10px;
+			margin-left:150px;
+			height: 100px;
+			width: 100px;
+			float:left;
+			
+		}
+		
+		#csg {
+			mmargin-top: 10px;
+			margin-left:10px;
+			margin-right:10px;
+			height: 200px;
+			width: 200px;
+			float:right;
+			border-radius: 50%;
+		}
+		
+		
+		
+		#csc {
+			margin-left:50px;
+			margin-right:50px;
+			border-radius: 50%;
+		}
+		
+		
+		
+		.footer{
+	
+			padding:30px 0px;
+			font-family: 'Play', sans-serif;
+			text-align:center;
+			opacity: 1; // Leave this as 1
+			background-color: rgba(0,0,0,0.6);
+		}
+
+		.footer .row{
+			width:100%;
+			margin:1% 0%;
+			padding:0.6% 0%;
+			color:white;
+			font-size:0.8em;
+			text-align:center;
+			}
+
+		.footer .row a{
+			text-decoration:none;
+			color:black;
+			transition:0.5s;
+		}
+
+		.footer .row a:hover{
+			color:#fff;
+			}
+
+		.footer .row ul{
+			width:100%;
+		}
+
+		.footer .row ul li{
+			display:inline-block;
+			margin:0px 30px;
+		}
+
+		.footer .row a i{
+		font-size:2em;
+		margin:0% 1%;
+		}
+
+		@media (max-width:720px){
+			.footer{
+				text-align:left;
+				padding:5%;
+			}
+			.footer .row ul li{
+				display:block;
+				margin:0px 0px;
+				text-align:left;
+			}
+			.footer .row a i{
+				margin:0% 3%;
+			}
+		}
+		
+		
+			div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  margin-left: 90px;
+  margin-top: 50px;
+  float: left;
+  width: 25%;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+		
+</style>
+</head>
+		<body>
+		<header>
+			<div class="navbar">
+				<a href="Seal.html" ><img class="imgg" src="image/logo.png" alt="logo"></a>
+				<a href="Index.html" id="p01">CAVITE STATE UNIVERSITY - BACOOR CAMPUS</a>
+				<div class="dropdown">
+					<button  class="dropbtn">☰
+					<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					<a href="About.html">ABOUT</a>
+					<a href="Gallery.html">GALLERY</a>
+					<a href="Seal.html">SEAL</a>
+					</div>
+				</div> 
+			</div>
+		</header>
+		</br>
+		</br>
+		</br>
+	
+	
+		<section>
+			
+			<div style="display:inline-block;">
+				<div id="p2" style="font-color: white;"id="p2" style="font-color: white;"> <span style='color: #046307'>Humble Beginnings</span></p></div>
+				
+					<div id="p8" style="font-color: white;"><span style='color: #000000'>The Cavite State University (CvSU) has its humble beginnings in 1906 as the Indang Intermediate School with the American Thomasites as the first teachers. Several transformations in the name of the school took place; Indang Farm School in 1918, Indang Rural High School in 1927, and Don Severino National Agriculture School in 1958. In 1964, the school was converted into a State College by virtue of Republic Act 3917 and became known as Don Severino Agricultural College (DSAC).</span></p></div>
+					<div><p id="p8" style="font-color: white;"><img src="image/Bacoor.jpg" alt="mail" id="bc"> <span style='color: #000000'>On January 22, 1998, by virtue of Republic Act No.8468, DSAC was converted into Cavite State University. In 2001, Cavite College of Fisheries (CACOF) in Naic, Cavite and Cavite College of Arts and Trade (CCAT) in Rosario, Cavite, were integrated to the University by virtue of CHED Memo No. 27 s. 2000. Since then, additional campuses in the province were established through memoranda of agreement with the LGUs. At present, CvSU has 11 campuses in the province. The main campus, approximately 70 hectares in land area and named as Don Severino delas Alas Campus, is in Indang, Cavite.</span></p></div>
+					<div><p id="p8" style="font-color: white;"><span style='color: #000000'>CvSU is mandated “to provide excellent, equitable and relevant educational opportunities in the arts, sciences and technology through quality instruction, and responsive research and development activities. It shall produce professional, skilled and morally upright individuals for global competitiveness.”</span></p></div>
+					<div><p id="p8" style="font-color: white;"><span style='color: #000000'>The University is offering close to 100 curricular programs in the undergraduate and graduate levels. It has more than 25,000 students and 1,200 faculty and staff from all campuses. The University is also authorized to certify and confer appropriate academic degrees in accordance with the Expanded Tertiary Education and Accreditation Program (ETEEAP). It has been accredited by TESDA as Trade and Testing Venue, and designated by the Department of Agriculture as the National Center for Research and Development for Coffee and Urban Agriculture. It also hosts the Southern Tagalog Agriculture Research and Development Consortium (STARDEC), the Affiliated Renewable Energy Center for Region IV-A, and the Regional ICT Center for Region IV-A.</span></p></div>
+					<div><p id="p8" style="font-color: white;"><span style='color: #000000'>CvSU adheres to its commitment to Truth, Excellence and Service as it aims to be the “premier University in historic Cavite recognized for excellence in the development of globally competitive and morally upright individuals”.</span></p></div>
+				</div>
+				
+			</div>
+		</section>
+		</br>
+		
+			<div>
+		<section>
+			<div id="center1">
+				<div><p id="p9" style="font-color: white;"><span style='color: #000000'>Bacoor Campus Programs:</span></p></div>
+				<div><p id="p10" style="font-color: white;"><span style='color: #000000'>1. BS Business Management</span><span style='color: #ffffff'>1. BS Busi</span><span style='color: #000000'>2. BS Computer Science</span><span style='color: #ffffff'>1. BS Busis</span></p></div>
+				<div><p id="p10" style="font-color: white;"><span style='color: #000000'>3. BS Criminology</span><span style='color: #ffffff'>1. BS Busisfasdsfsiiiiii</span><span style='color: #000000'>4. BS Hospitality Management</span><span style='color: #ffffff'>1. Biiii</span></p></div>
+				<div><p id="p10" style="font-color: white;"><span style='color: #000000'>5. BS Psychology</span><span style='color: #ffffff'>1. BS Busifsdsaddaxiii</span><span style='color: #000000'>6. BS Information Technology</span><span style='color: #ffffff'>1. Biiiiii</span></p></div>
+				<div><p id="p10" style="font-color: white;"><span style='color: #000000'>7. Bachelor of Secondary Education (Major in Math and English)</span><span style='color: #ffffff'>1. BS Busiis</span></span></p></div>
+			</div>
+			</div>
+			</section>
+			</br>
+			
+</br>
+			<section>
+			<div >
+				<div><p id="p09" style="font-color: white;"><span style='color: #000000'>Campus Organizations</span></p></div>
+				<div class="gallery">
+					<a target="_blank" href="About/AllianceofComputerScientist.jpg">
+					<img src="About/AllianceofComputerScientist.jpg"  width="600" height="400">
+					</a>
+					<div class="desc">Alliance of Computer Scientist</div>
+					</div>
+
+				<div class="gallery">
+					<a target="_blank" href="About/CentralStudentGovernment.jpg">
+					<img src="About/CentralStudentGovernment.jpg"  width="600" height="400">
+					</a>
+					<div class="desc">Central Student Government</div>
+				</div>
+
+				<div class="gallery">
+					<a target="_blank" href="About/ComSelec.jpg">
+					<img src="About/ComSelec.jpg" width="600" height="400">
+					</a>
+					<div class="desc">Com Selec</div>
+				</div>
+
+				<div class="gallery">
+					<a target="_blank" href="About/ConacesDanceTribe.jpg">
+					<img src="About/ConacesDanceTribe.jpg"  width="600" height="400">
+					</a>
+					<div class="desc">Conaces Dance Tribe</div>
+				</div>
+				
+				<div class="gallery">
+					<a target="_blank" href="About/HarmonicVoicesChorale.jpg">
+					<img src="About/HarmonicVoicesChorale.jpg"  width="600" height="400">
+					</a>
+					<div class="desc">Harmonic Voices Chorale</div>
+				</div>
+
+				<div class="gallery">
+					<a target="_blank" href="About/HospitalityManagementSociety.jpg">
+					<img src="About/HospitalityManagementSociety.jpg"  width="600" height="400">
+					</a>
+					<div class="desc">Hospitality Management Society</div>
+				</div>
+
+				<div class="gallery">
+					<a target="_blank" href="About/InformationTechnologySociety.jpg">
+					<img src="About/InformationTechnologySociety.jpg" width="600" height="400">
+					</a>
+					<div class="desc">Information Technology Society</div>
+				</div>
+
+				<div class="gallery">
+					<a target="_blank" href="About/LaCienciadeCriminesSociedad.jpg">
+					<img  src="About/LaCienciadeCriminesSociedad.jpg"  width="600" height="400">
+					</a>
+				<div class="desc">La Ciencia de Crimines Sociedad</div>
+				</div>
+				<div class="gallery">
+					<a target="_blank" href="About/LaLigaPsicologia.jpg">
+					<img src="About/LaLigaPsicologia.jpg"  width="600" height="400">
+					</a>
+				<div class="desc">La Liga Psicologia</div>
+				</div>
+
+				<div class="gallery">
+					<a target="_blank" href="About/LeManager’sSociete.jpg">
+					<img src="About/LeManager’sSociete.jpg"  width="600" height="400">
+					</a>
+					<div class="desc">Le Manager’s Societe</div>
+				</div>
+				<div class="gallery">
+					<a target="_blank" href="About/SocietasHumanaResource.jpg">
+					<img src="About/SocietasHumanaResource.jpg"  width="600" height="400">
+					</a>
+					<div class="desc">Societas Humana Resource</div>
+				</div>
+
+				<div class="gallery">
+					<a target="_blank" href="About/TeacherEducationSociety.jpg">
+					<img src="About/TeacherEducationSociety.jpg"  width="600" height="400">
+					</a>
+					<div class="desc">Teacher Education Society</div>
+				</div>
+
+				<div class="gallery">
+					<a target="_blank" href="About/TeatrongPadayon.jpg">
+					<img src="About/TeatrongPadayon.jpg" width="600" height="400">
+					</a>
+					<div class="desc">Teatrong Padayon</div>
+				</div>
+
+				<div class="gallery">
+					<a target="_blank" href="About/UnitedFaithOrganization.jpg">
+					<img src="About/UnitedFaithOrganization.jpg"  width="600" height="400">
+					</a>
+					<div class="desc">United Faith Organization</div>
+				</div>
+
+			</div>
+		</section>
+			
+			
+			
+
+		
+		
+			<div class="footer" id="center3">
+			<div class="row">
+			<p id="p009">Follow us for more:<p>
+			<a href="https://www.youtube.com/@cavitestateuniversitymainc7893"><img class="img" src="image/yt.png" alt="mail" id="email"></i></a>
+			<a href="https://cvsu.edu.ph"><img class="img" src="image/phone.png" alt="contact" id="contact"></i></a>
+			<a href="https://www.facebook.com/CvSU.B.Admission"><img class="img" src="image/fb.png" alt="face" id="fb"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+		</div>
+
+
+			<div class="row">
+				CVSU Copyright © 2023 - All rights reserved || Designed By: Virtudez Groups 
+			</div>
+			</div>
+			
+		
+			
+			</body>
+</html>

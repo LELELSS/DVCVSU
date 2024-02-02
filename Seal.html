@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CvSU SEAL</title>
+	<link rel="icon" href="image/logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style >
+
+
+	@media only screen and (max-width:800px) {
+		/* For tablets: */
+		.main {
+		width: 80%;
+		padding: 0;
+	}
+	.right {
+    width: 100%;
+	}
+	}
+	@media only screen and (max-width:500px) {
+		/* For mobile phones: */
+		.menu, .main, .right {
+		width: 100%;
+	}
+	}
+		html,
+		body {
+			margin:0;
+			padding:1;
+			margin-top:0;
+			background-color: #ffb703;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+			background-image: url('image/bg.png');
+			scroll-behavior: smooth;
+		}
+		#whole {
+			margin:0 auto;
+			width:100%;
+		
+		}	
+		
+		#center {
+			background-color: white;
+			margin-left: 50px;
+			float:left;
+			width:90%;
+			padding: 1%;
+			height:600px;
+			margin-top: 50px;
+			border-radius: 25px;
+		
+		}
+		
+		#left {
+			float:left;
+			width:32%;
+			padding: 1%;
+			height:500px;
+			background-color:#ffffff;
+			margin-top: 50px;
+			margin-right: -20px;
+			margin-left: 50px;
+			border-radius: 25px;
+		}
+		
+		#left1 {
+			float:left;
+			width:22%;
+			padding: 1%;
+			height:330px;
+			background-color:#ffffff;
+			margin-top: 50px;
+			margin-right: -20px;
+			margin-left: 15px;
+			border-radius: 25px;
+		}
+		
+		#right {
+			float:left;
+			width:55%;
+			padding: 1%;
+			height:500px;
+			background-color:#ffffff;
+			margin-top: 50px;
+			margin-right: 10px;
+			margin-left: 50px;
+			border-radius: 25px;
+		}
+		
+
+		.navbar {
+			background-color: #333;
+			position:fixed;
+			display: block;
+			width: 100%;
+
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			text-align: center;
+			display: block;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: right;
+			margin-right: 10px;
+			
+		}
+
+		.dropdown .dropbtn {
+			font-size: 25px;  
+			border: none;
+			outline: none;
+			color: white;
+			background-color: inherit;
+			font-family: inherit;
+			margin-left: 0px;
+			margin-top: 10px;
+			text-align: center;
+		}
+
+		.navbar a:hover, .dropdown:hover .dropbtn {
+			background-color: black;
+		}
+
+		.dropdown-content {
+			right: 4px;
+			left: auto;
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		
+
+		#p01 {
+			
+			color: white;
+			font-size: 25px;
+			margin-left: 20px;
+			margin-top: 15px;
+			text-decoration: none;
+		}
+		
+		#p1 {
+			float: right;
+			color: white;
+			font-size: 20px;
+			margin-left: 20px;
+			margin-top: 15px;
+			text-decoration: none;
+		}
+			
+		.img {
+			height: 80%;
+			width: 48px;
+			margin-left:30px;
+			margin-top: 5px;
+		}
+		.imgg {
+			height: 30%;
+			width: 48px;
+			margin-left:10px;
+			margin-top: 5px;
+		}
+		
+		#VM {
+			height: 50%;
+			width: 55%;
+			margin-left:550px;
+			margin-top: 60px;
+		}
+		
+		#a1 {
+			margin-left: 400px;
+		}
+		
+		#values {
+			margin-top: 0px;
+			margin-left: 30px;
+			float: left;
+			font-family: Fantasy;
+			font-weight: normal;
+			font-size: 50px;
+			text-align: center;
+		}
+		
+		#cvsu {
+			margin-top: 50px;
+			height: 570px;
+			width: 100%;
+		}
+		
+		#p2{
+			margin-top:-430px;
+			margin-left:80px;
+			text-align: center;
+			font-size: 40px;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		
+		#p3{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 1.3vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px black;
+		}
+		
+		#p4{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 1.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 3px 3px 10px #FDBD01;
+		}
+		
+		#p5{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 1.55vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px #FFFFFF;
+		}
+		
+		#p6{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 1.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px black;
+		}
+		
+		#p7{
+			margin-top:0px;
+			margin-left:20px;
+			text-align: center;
+			font-size: 1.5vw;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			
+		}
+		
+		#p8{
+			margin-top:0px;
+			margin-left:350px;
+			text-align: left;
+			text-indent: 50px;
+			font-size: 1.2vw;
+			font-family: 'Arial', sans-serif; 
+			font-weight: normal;
+			text-shadow: 1px 1px 5px white;
+		}
+		
+		#p9 {
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 1px 1px 5px white;
+		}
+		
+		#p009{
+			margin-top:0px;
+			margin-left:0px;
+			text-align: center;
+			font-size: 30px;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: bold;
+			text-shadow: 5px 5px 10px black;
+		}
+		
+		
+		#p10{
+			text-align: justify;
+			margin-top:-10px;
+			margin-left:70px;
+			margin-right:50px;		
+			font-size: 20px;
+			font-family: 'Arial', sans-serif; 
+			font-weight: normal;
+			text-shadow: 1px 1px 5px white;
+		}
+		
+		#p11 {
+			text-align: justify;
+			margin-top:0px;
+			margin-left:70px;
+			margin-right:50px;		
+			text-align: left;
+			text-indent: 50px;
+			font-size: 20px;
+			font-family: 'Arial Black', sans-serif; 
+			font-weight: normal;
+			text-shadow: 1px 1px 5px white;
+		}
+		
+		#p12 {	
+			text-align: justify;
+			margin-top:20px;
+			margin-left:70px;
+			margin-right:50px;	
+			text-align: left;
+			font-size: 20px;
+			font-family: 'Arial', sans-serif; 
+			font-weight: normal;
+			text-shadow: 1px 1px 5px white;
+		}
+		
+		
+		
+		#center1 {
+			background-color: white;
+			float:left;
+			width:98%;
+			padding: 1%;
+			height:600px;
+			margin-top: 50px;
+		}
+		
+		#center2 {
+			background-image: url('image/footer.png');
+			float:left;
+			width:98%;
+			padding: 1%;
+			height:100px;
+			margin-top: 50px;
+		}
+			
+		#VM {
+			height: 100%;
+			width: 100%;
+			margin-top: 0px;
+			margin-left: 0px;
+		}
+		
+		#VM1 {
+			height: 100%;
+			width: 100%;
+			margin-top: 0px;
+			margin-left: 0px;
+		}
+		
+		.square {
+			height: 50px;
+			width: 50px;
+			background-color: #555;
+			border-radius: 5px;
+		}
+		#mission {
+			height: 50%;
+			width: 50%;
+			margin-top: -500px;
+			margin-left: 0px;
+		}
+		
+		.container {
+			position: relative;
+			text-align: center;
+			height: 50%;
+			width: 50%;
+			}
+			
+		.top-left {
+			position: absolute;
+			top: 850px;
+			left: 90px;
+			}
+		.top-right {
+			position: absolute;
+			top: 865px;
+			right: 90px;
+			}
+		.bottom-left {
+			position: absolute;
+			top: 1130px;
+			left: 155px;
+			}
+		
+	
+		.left {
+			position: absolute;
+			left: 15px;
+			bottom: -30px;
+			
+			}
+		.left1 {
+			position: absolute;
+			left: 140px;
+			bottom: -30px;
+			
+			}
+			
+		.left2 {
+			position: absolute;
+			left: 780px;
+			bottom: 45px;
+			}
+		.left3 {
+			position: absolute;
+			left: 680px;
+			bottom: 8px;
+			}
+		.left4 {
+			position: absolute;
+			left: 680px;
+			bottom: -35px;
+			}
+		.left5 {
+			position: absolute;
+			left: 680px;
+			bottom: -80px;
+			}
+		#logo1 {
+			margin-bottom: 5px;
+			height: 100px;
+			width: 100px;
+		}
+		#email {
+			margin-top: 10px;
+			height: 50px;
+			width: 50px;
+		}
+		#contact {
+			margin-top: 10px;
+			height: 50px;
+			width: 50px;
+		}
+		#fb {
+			margin-top: 10px;
+			height: 50px;
+			width: 50px;
+		}
+		
+		#bc {
+			margin-top: 20px;
+			height: 400px;
+			width: 300px;
+			margin-left:30px;
+			border-radius: 50%;
+		}
+		
+		#seal {
+			
+			left: 1000;
+			margin-top: 150px;
+			height: 40%;
+			width: 30%;
+			
+			border-radius: 25px;
+		}
+		
+		
+		.center3{
+			display: block;
+			margin-top: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+		
+		.footer{
+	
+			padding:30px 0px;
+			font-family: 'Play', sans-serif;
+			text-align:center;
+			opacity: 1; // Leave this as 1
+			background-color: rgba(0,0,0,0.6);
+		}
+
+		.footer .row{
+			width:100%;
+			margin:1% 0%;
+			padding:0.6% 0%;
+			color:white;
+			font-size:0.8em;
+			text-align:center;
+			}
+
+		.footer .row a{
+			text-decoration:none;
+			color:black;
+			transition:0.5s;
+		}
+
+		.footer .row a:hover{
+			color:#fff;
+			}
+
+		.footer .row ul{
+			width:100%;
+		}
+
+		.footer .row ul li{
+			display:inline-block;
+			margin:0px 30px;
+		}
+
+		.footer .row a i{
+		font-size:2em;
+		margin:0% 1%;
+		}
+
+		@media (max-width:720px){
+			.footer{
+				text-align:left;
+				padding:5%;
+			}
+			.footer .row ul li{
+				display:block;
+				margin:0px 0px;
+				text-align:left;
+			}
+			.footer .row a i{
+				margin:0% 3%;
+			}
+		}
+		
+		
+		
+</style>
+</head>
+		<body>
+		
+		<header>
+			<div class="navbar">
+				<a href="Seal.html" ><img class="imgg" src="image/logo.png" alt="logo"></a>
+				<a href="Index.html" id="p01">CAVITE STATE UNIVERSITY - BACOOR CAMPUS</a>
+				<div class="dropdown">
+					<button  class="dropbtn">☰
+					<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					<a href="About.html">ABOUT</a>
+					<a href="Gallery.html">GALLERY</a>
+					<a href="Seal.html">SEAL</a>
+					</div>
+				</div> 
+			</div>
+		</header>
+		</br></br>
+		</br>
+		<div>
+		<img class="center3" src="image/UniversitySeal.png" alt="mail" id="seal">
+		</br></br>
+		</div>
+		
+		<section>
+		
+			<div id="whole">
+
+			
+			<div >
+				<div><p id="p9" style="font-color: white;"><span style='color: #000000'>CvSU Seal Elements</span></p></div>
+				
+				<div >
+					
+				<div><p id="p11" style="font-color: white;"><span style='color: #000000'>The CvSU seal is composed of four important interactive elements that represent the vision, thrusts, and programs of the university.</span></p></div>
+				<div><p id="p12" style="font-color: white;"><span style='color: #000000'>1.<b> BOOK WITH TORCH</b> -located at the center of the seal. Symbolizes knowledge and wisdom and represents education, the humanities, and other social science programs of the university.</span></p></div>
+				<div><p id="p10" style="font-color: white;"><span style='color: #000000'>2.<b>  COFFEE TWIG WITH RIPE BERRIES</b> -at the right-hand side of the book with a torch. Symbolizes the major agricultural thrusts of the province of Cavite. It also represents the agricultural and related programs of the university.</span></p></div>
+				<div><p id="p10" style="font-color: white;"><span style='color: #000000'>3.<b>  GEAR</b> -at the bottom of the book with a torch. symbolizes the engineering and technology programs of the university.</span></p></div>
+				<div><p id="p10" style="font-color: white;"><span style='color: #000000'>4.<b>  ATOMIC STRUCTURE</b> -at the left-hand side of the book. It represents the science programs and scientific research undertakings of the university.</span></p></div>
+				<div><p id="p10" style="font-color: white;"><span style='color: #000000'>5. <b> FLAME OF THE TORCH</b> -designed as "CvSU,” which is the adopted acronym of Cavite State University. The flame symbolizes the enduring and everlasting flame that will guide the university in its search for truth.</span></p></div>
+				<div><p id="p10" style="font-color: white;"><span style='color: #000000'>6.<b>  FIGURE 1906</b> -written in gold against a dark green background. Placed below, that’s the year that CvSU had its humble beginnings as an intermediate school established in Indang, Cavite.</span></p></div>
+				<div><p id="p10" style="font-color: white;"><span style='color: #000000'>7.<b>  LIGHT GREEN</b> -background for all elements.</span></p></div>
+				<div><p id="p10" style="font-color: white;"><span style='color: #000000'>8. <b> INSTRUCTION, RESEARCH, AND EXTENSION</b> -The trilogy of functions of the university also symbolizes the overall triangular shape of the seal.</span></p></div>
+
+			</div>
+			</div>
+			
+			</div>
+		
+		</section>
+		
+		</br>
+		</br>
+		</br>
+		
+		<footer>
+			
+			<div class="footer" id="center3">
+			<div class="row">
+			<p id="p009">Follow us for more:<p>
+			<a href="https://www.youtube.com/@cavitestateuniversitymainc7893"><img class="img" src="image/yt.png" alt="mail" id="email"></i></a>
+			<a href="https://cvsu.edu.ph"><img class="img" src="image/phone.png" alt="contact" id="contact"></i></a>
+			<a href="https://www.facebook.com/CvSU.B.Admission"><img class="img" src="image/fb.png" alt="face" id="fb"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+		</div>
+
+
+			<div class="row">
+				CVSU Copyright © 2023 - All rights reserved || Designed By: Virtudez Groups 
+			</div>
+			</div>
+		</footer>
+	
+		
+			
+			</body>
+			
+</html>
